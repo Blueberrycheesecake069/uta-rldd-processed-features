@@ -10,18 +10,18 @@ The extracted features capture both **facial fatigue indicators** and **3D head 
 
 The dataset includes the following columns:
 
-- `perclos`
-- `norm_avg_ear`
-- `ear_std`
-- `avg_mar`
-- `yawn_count`
-- `blink_rate`
-- `avg_blink_dur`
-- `pitch`
-- `yaw`
-- `roll`
-- `img_path`
-- `target`
+- `perclos` – Percentage of eye closure over time; a commonly used fatigue indicator.
+- `norm_avg_ear` – Normalized average Eye Aspect Ratio (EAR) representing eye openness.
+- `ear_std` – Standard deviation of EAR values capturing variability in eye closure.
+- `avg_mar` – Average Mouth Aspect Ratio used to detect yawning behavior.
+- `yawn_count` – Number of detected yawns within a given observation window.
+- `blink_rate` – Frequency of eye blinks per unit time.
+- `avg_blink_dur` – Average duration of detected blinks.
+- `pitch` – Vertical head rotation angle indicating up/down head movement.
+- `yaw` – Horizontal head rotation angle representing left/right head movement.
+- `roll` – Tilt of the head around the front axis.
+- `img_path` – Path to the corresponding frame/image extracted from the video.
+- `target` – Ground truth label indicating driver state (e.g., alert vs drowsy).
 
 These features capture important behavioral and physiological signals related to driver fatigue such as **eye closure patterns, blinking behavior, yawning frequency, and head orientation**.
 
